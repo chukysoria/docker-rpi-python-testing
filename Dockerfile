@@ -1,6 +1,10 @@
 FROM resin/rpi-raspbian:jessie
 MAINTAINER Carlos Sánchez
 
+ENV QEMU_EXECVE 1
+COPY . /usr/bin
+RUN [ "cross-build-start" ]
+
 RUN  apt-get update                                                         && \
      apt-get install -y --no-install-recommends                                \
 	 git                                                                   \
@@ -20,3 +24,5 @@ RUN  apt-get update                                                         && \
      apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENTRYPOINT ["/bin/bash"]
+
+RUN [ "cross-build-end" ]
