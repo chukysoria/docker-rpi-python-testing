@@ -1,6 +1,7 @@
-FROM resin/rpi-raspbian:jessie
+FROM armel/debian:jessie
 MAINTAINER Carlos Sánchez
 
+ENV QEMU_CPU arm1176
 ENV QEMU_EXECVE 1
 COPY . /usr/bin
 RUN [ "cross-build-start" ]
