@@ -14,6 +14,7 @@ RUN  apt-get update                                                         && \
 	 python3                                                               \
 	 python3-dev                                                           \
 	 libffi-dev                                                            \
+	 libasound2-dev                                                        \
 	 build-essential                                                    && \
      apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*         && \
      sed -i 's/jessie/stretch/g' /etc/apt/sources.list                      && \
