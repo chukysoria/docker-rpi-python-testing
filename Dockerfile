@@ -12,6 +12,7 @@ RUN  sed -i 's/jessie/stretch/g' /etc/apt/sources.list                      && \
 	 python2.7                                                             \
 	 python2.7-dev                                                         \
 	 python-pip                                                            \
+	 python-setuptools                                                     \
 	 python3.4                                                             \
 	 python3.4-dev                                                         \
 	 python3.5                                                             \
