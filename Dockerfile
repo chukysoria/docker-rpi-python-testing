@@ -17,6 +17,7 @@ RUN  apt-get update                                                         && \
 	 python2.7-dev                                                         \
 	 python-pip                                                            \
 	 python-setuptools                                                     \
+	 python-wheel                                                          \
 	 python3.4                                                             \
 	 python3.4-dev                                                         \
 	 python3.5                                                             \
