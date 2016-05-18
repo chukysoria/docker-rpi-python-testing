@@ -27,6 +27,7 @@ RUN  apt-get update                                                         && \
 	 libffi-dev                                                            \
 	 libasound2-dev                                                        \
 	 build-essential                                                    && \
+	 pip install coveralls tox                                          && \
      apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD https://github.com/sashahilton00/spotify-connect-resources/raw/master/libs/armel/armv6/release-esdk-1.18.0-v1.18.0-g121b4b2b/libspotify_embedded_shared.so /usr/lib/
